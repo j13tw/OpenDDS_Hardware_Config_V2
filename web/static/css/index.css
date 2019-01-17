@@ -4,7 +4,12 @@
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  font-family:"Microsoft JhengHei";
+  padding-top: 1%;
+  padding-left: 3%;
+  background-size: 50% auto; /* 圖片  寬 高 */
+  background-repeat: repeat; /* 複製圖片 X軸 Y軸 */
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS6nRBdKKEGfONbcIJXUGGbuE7hUj_lSyytDlDX_ZWV9tbMiUXg"); 
 }
 
 
@@ -23,36 +28,40 @@ body {
  */
 .navbar-fixed-top {
   border: 0;
+  padding-bottom:1.5%; 
 }
-
 /*
  * Sidebar
  */
 
 /* Hide for mobile, show later */
 .sidebar {
+  height: 15%;
   display: none;
 }
-@media (min-width: 100px) {
+@media (min-width: 100px) { /* 最小100寬 RWD */
   .sidebar {
-    position: fixed;
-    top: 51px;
+    /* position: fixed; */
+    /* top: 51px;
     bottom: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; */
     display: block;
-    padding: 20px;
+    padding: 20px; 
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
+    overflow-y: auto;  /*Scrollable contents if viewport is shorter than content. */
+     background-color: #15b830;
+    /*border-right: 1px solid #eee; */
   }
+ 
 }
 
+
+
 /* Sidebar navigation */
-.nav-sidebar {
+/*.nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
+/*  margin-bottom: 20px;
   margin-left: -20px;
 }
 .nav-sidebar > li > a {
@@ -64,9 +73,52 @@ body {
 .nav-sidebar > .active > a:focus {
   color: #fff;
   background-color: #428bca;
+}*/
+ .OpenMenu{
+  text-decoration: none; /* ��r�׹� */
+  font-size:30px;
+  cursor:pointer;
+   padding-top:5.5%; 
+   padding-left:2%;
+ }
+ 
+.sidenav { /* Class �� CSS*/
+  /*margin-top:5%;  test ���~��Z */
+  height: 100%; /* �� */
+  width: auto; /* �i�վ� */
+  position: fixed; /* ��m�T�w */
+  z-index: 1; /* Z�b �V�j �V�W�� */
+  top: 0;
+  left: 0;
+  background-color: #111; /* �I���C�� */
+  overflow-x: hidden; /* ��(X�b)�Ӥj �v�ñ��b */
+  overflow-y:hidden;
+  transition: 0.5s ease-in 0.25s; /* CSS3 �ܧ� */
+  padding-top: 7.5%; /* �W���Z */
 }
 
+  .sidenav a {
+      font-size:18px; /* 連結文字大小 */
+      padding: 1% 18px 20px 40px; /* �s�������Z */
+      text-decoration: none; /* ��r�׹� */
+      color: #818181; /* ��r�C�� */
+      display: block; /* �i�{�϶� */
+      transition: 0.2s ease-in ; /* 時間 */
+      white-space:nowrap; /* 死都不換行 */
+  }
 
+    .sidenav a:hover {
+      color: #f1f1f1; /* ��r�IĲ�ܪ��C�� */
+    }
+
+  .sidenav .closebtn { /* Menu (X���]�w) �i�} �M ���� �]�w */
+      position:relative; /* 相依 */
+      top: 0;
+      right: 7.5%; /* test */
+      font-size: 42px;
+      margin-top: -8%;
+      margin-left: 10%;
+  }
 /*
  * Main content
  */
@@ -86,10 +138,13 @@ body {
 
 .select-sty {
   padding-left: 40px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid #eee;
+  padding-top: 1.3%;
+  padding-bottom: 1.5%;
+  border: 1px solid #D75404;
 }
-
+.hr_color{
+  border: 1px solid #D75404;
+}
 /*
  * Placeholder dashboard ideas
  */
@@ -115,7 +170,7 @@ body {
 }
 
 .btn {
-  background-color: #4CAF50; /* Green */
+  background-color: rgb(55, 115, 172); /* Green */
   border: none;
   color: white;
   text-align: center;
@@ -129,6 +184,9 @@ body {
   position:absolute;
   right: 30px;
 }
+/* .dd{
+  background-color: #008CBA;
+} */
 
 .btn-update {
   background-color: rgb(0, 210, 247); 
@@ -158,4 +216,10 @@ body {
 .power-img {
   width:36px;
   height:36px;
+}
+.NUTC-img {
+  position: fixed;
+  margin-left:5%;
+  width:48px;
+  height:48px;
 }

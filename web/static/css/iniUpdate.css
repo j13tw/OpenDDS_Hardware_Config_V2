@@ -1,13 +1,11 @@
-/*
- * Base structure
- */
-
-
-/* Move down content because we have a fixed navbar that is 50px tall */
-
 body {
-    padding-top: 50px;
-}
+    font-family:"Microsoft JhengHei";
+    padding-top: 1%;
+    padding-left: 3%;
+    background-size: 50% auto; /* 圖片  寬 高 */
+    background-repeat: repeat; /* 複製圖片 X軸 Y軸 */
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrS6nRBdKKEGfONbcIJXUGGbuE7hUj_lSyytDlDX_ZWV9tbMiUXg"); 
+  }
 
 
 /*
@@ -51,26 +49,54 @@ body {
 
 /* Sidebar navigation */
 
-.nav-sidebar {
-    margin-right: -21px;
-    /* 20px padding + 1px border */
-    margin-bottom: 20px;
-    margin-left: -20px;
-}
+.hr_color{
+    border: 1px solid #D75404;
+  }
 
-.nav-sidebar>li>a {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.nav-sidebar>.active>a,
-.nav-sidebar>.active>a:hover,
-.nav-sidebar>.active>a:focus {
-    color: #fff;
-    background-color: #428bca;
-}
-
-
+  .OpenMenu{
+    font-size:30px;
+    cursor:pointer;
+     padding-top:5.5%; 
+     padding-left:2%;
+   }
+   
+  .sidenav { /* Class �� CSS*/
+    /*margin-top:5%;  test ���~��Z */
+    height: 100%; /* �� */
+    width: auto; /* �i�վ� */
+    position: fixed; /* ��m�T�w */
+    z-index: 1; /* Z�b �V�j �V�W�� */
+    top: 0;
+    left: 0;
+    background-color: #111; /* �I���C�� */
+    overflow-x: hidden; /* ��(X�b)�Ӥj �v�ñ��b */
+    overflow-y:hidden;
+    transition: 0.5s ease-in 0.25s; /* CSS3 �ܧ� */
+    padding-top: 7.5%; /* �W���Z */
+  }
+  
+    .sidenav a {
+        font-size:18px; /* 連結文字大小 */
+        padding:1% 18px 20px 40px; /* �s�������Z */
+        text-decoration: none; /* ��r�׹� */
+        color: #818181; /* ��r�C�� */
+        display: block; /* �i�{�϶� */
+        transition: 0.2s ease-in ; /* 時間 */
+        white-space:nowrap; /* 死都不換行 */
+    }
+  
+      .sidenav a:hover {
+        color: #f1f1f1; /* ��r�IĲ�ܪ��C�� */
+      }
+  
+    .sidenav .closebtn { /* Menu (X���]�w) �i�} �M ���� �]�w */
+        position:relative; /* 相依 */
+        top: 0;
+        right: 7.5%; /* test */
+        font-size: 42px;
+        margin-top: -8%;
+        margin-left: 10%;
+    }
 /*
  * Main content
  */
@@ -108,3 +134,9 @@ body {
     width:36px;
     height:36px;
 }
+.NUTC-img{
+    position: fixed;
+    margin-left:5%; 
+    width:48px;
+    height:48px;
+  }
