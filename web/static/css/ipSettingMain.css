@@ -181,6 +181,7 @@ body {
     border-radius: 10px;
     height: auto;
     margin-top: 16px;
+    width:50%;
 }
 
 
@@ -220,3 +221,23 @@ body {
     width:48px;
     height:48px;
   }
+
+
+.uuu{
+    margin-top: 3%;
+    margin-left: 40%;
+    color: #616467;
+    border: 2px solid #616467;
+    border-radius: 20px;
+    width:100px;
+    height:48px;
+}
+.uuu:hover{
+    margin-left: 40%;
+    color: #eee;
+    background-color: #616467;
+    border-radius: 20px;
+    width:100px;
+    height:48px;
+    transition: 0.5s ;
+}
